@@ -41,10 +41,10 @@ func CreateRecent(c context.Context, uid string, data *RecentDay)(*RecentDay, er
 	_, err := datastore.Put(c, key, data)
     fmt.Println("Error------------>", err)
 
-    keyRecentDay := datastore.NewKey(c, recentIndex, uid, 0, nil)
-    var recentDay RecentDay
-    err = datastore.Get(c, keyRecentDay, &recentDay)
-    fmt.Printf(">>>>>>>>>>>>>>>>in create=%v", recentDay.mostRecentDay)
+    //keyRecentDay := datastore.NewKey(c, recentIndex, uid, 0, nil)
+    //var recentDay RecentDay
+    //err = datastore.Get(c, keyRecentDay, &recentDay)
+    //fmt.Printf(">>>>>>>>>>>>>>>>in create=%v", recentDay.mostRecentDay)
 
     return data, err
 }

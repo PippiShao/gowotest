@@ -4,7 +4,7 @@ const (
 	index       = `StepData` // the table name
 	invalidData = `error: invalid data`
 	splitter    = `#`
-	recentIndex    = `RecentDay`
+//	recentIndex    = `RecentDay`
 )
 
 //key is uid#day#hour
@@ -15,7 +15,7 @@ type StepData struct {
 	Count int    `json:"Count"`
 }
 
-type RecentDay struct {
-	Uid   string `json:"Uid"`
-    mostRecentDay int `json:"mostRecentDay"`
-}
+//type RecentDay struct {
+//	Uid   string `json:"Uid"`
+//    mostRecentDay int `json:"mostRecentDay"`
+//}

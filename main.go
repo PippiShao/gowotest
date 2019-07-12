@@ -28,7 +28,7 @@ func postStep(c *gin.Context) {
     if recent < day {
         //fmt.Printf(">>>>>>>>recent is : %v", recent)
         //fmt.Printf(">>>>>>>>day is : %v", day)
-        most_recent := RecentDay{uid, day}
+        most_recent := RecentDay{day}
         //fmt.Printf(">>>>>>>>most recent day is : %v\n", most_recent.mostRecentDay)
         fmt.Printf("")
         CreateRecent(ctx, uid, &most_recent)
